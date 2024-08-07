@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Виктория Кнороз](https://up.htmlacademy.ru/htmlcss-individual/1/user/2203063).
-* Наставник: [Виктория Никитина](https://up.htmlacademy.ru/htmlcss-individual/1/user/)1217273.
+* Наставник: [Виктория Никитина](https://up.htmlacademy.ru/htmlcss-individual/1/user/1217273).
 
 ---
 
