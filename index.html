@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="./styles/styles.css">
   </head>
 
   <body>
@@ -36,7 +37,7 @@
             </a>
           </li>
           <li class="user-menu-item">
-            <a href="#" class="user-menu-link">Хочу сюда!</a>
+            <a href="#" class="user-menu-button">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -45,16 +46,16 @@
       <h1 class="visually-hidden">Неофициальный сайт города Седона</h1>
       <section class="welcome">
         <h2 class="visually-hidden">Приглашение посетить туристический центр</h2>
-        <img src="./images/welcome.svg" width="458" height="352" alt="Добро пожаловать в великолепную Седону!" class="welcome-image">
+        <img src="./images/welcome.svg" width="458" height="352" alt="Welcome to the Sedona, because the Grand Canyon sucks!" class="welcome-image">
       </section>
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества Седоны в сравнении с Гранд-Каньоном</h2>
-        <p><b>Седона — небольшой городок в Аризоне, заслуживающий большего!</b></p>
-        <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        <p class="city-advantages">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+        <p class="advantages-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         <ul class="advantages-list">
           <li class="advantages-item">
-            <h3 class="advantages-title">Настоящий городок</h3>
-            <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <h3 class="advantages-city-title">Настоящий городок</h3>
+            <p class="advantages-city-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             <img src="./images/gallery-1.jpg" width="800" height="385" alt="Городская инфраструктура" class="advantages-image">
           </li>
           <li class="advantages-item">
@@ -71,15 +72,15 @@
           </li>
           <li class="advantages-item">
             <img src="./images/gallery-2.jpg" width="800" height="385" alt="Мост Дьявола во всем великолепии" class="advantages-image">
-            <h3 class="advantages-title">Там есть мост дьявола</h3>
-            <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            <h3 class="advantages-city-title">Там есть мост дьявола</h3>
+            <p class="advantages-city-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
           </li>
         </ul>
       </section>
       <section class="recommendations">
         <h2 class="visually-hidden">Рекомендации по отдыху</h2>
-        <p><strong>Приезжайте в Седону отдохнуть в комфорте и уюте!</strong></p>
-        <p>Опытный персонал и качественное обслуживание</p>
+        <p class="invitation"><strong>Приезжайте в Седону отдохнуть в комфорте и уюте!</strong></p>
+        <p class="staff-service">Опытный персонал и качественное обслуживание</p>
         <ul class="recommendations-list">
           <li class="recommendations-item">
             <h3 class="recommendations-title">Жилье</h3>
@@ -97,15 +98,15 @@
       </section>
       <section class="hotel-search">
         <h2 class="visually-hidden">Поиск подходящей гостиницы в Седоне</h2>
-        <p><strong>Заинтересовались?</strong></p>
-        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <p class="interest">Заинтересовались?</p>
+        <p class="booking-dates">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a href="#" class="hotel-search-link">Поиск гостиницы в Седоне</a>
       </section>
     </main>
     <footer class="page-footer">
       <section class="footer-subscription">
         <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
-        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <p class="mailing-list">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" required>
           <button class="newsletter-button" type="submit">Подписаться</button>
@@ -133,7 +134,7 @@
       </section>
       <section class="footer-contact">
         <h2 class="visually-hidden">Номер телефона</h2>
-        <p>+7 (812) 812-12-12</p>
+        <a class="footer-contact-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       </section>
       <section class="footer-logo">
         <h2 class="visually-hidden">Лого .html academy</h2>
