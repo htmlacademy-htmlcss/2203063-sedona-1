@@ -1,0 +1,406 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  eight: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.page-header {}
+
+.logo-link {}
+
+.logo-image {
+  display: block;
+}
+
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.main-menu {
+  display: flex;
+  flex-wrap: wrap;
+  width: 550px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-menu-item {
+
+}
+
+.main-menu-link {
+  display: block;
+  padding: 20px 16px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+}
+
+.user-menu {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  max-width: 500px;
+  margin-left: auto;
+  list-style: none;
+}
+
+.user-menu-item {
+
+}
+
+.user-menu-link {
+  display: block;
+  padding: 22px 11px;
+  min-width: 11px;
+  min-height: 22px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+}
+
+.favorite-count {}
+
+.user-menu-button {
+  display: block;
+  padding: 16px 20px;
+  margin: 14px 0;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #756157;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.main-container {
+flex-grow: 1;
+}
+
+.main-index {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.page-container
+
+.welcome {
+  background-image: url("../images/index-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: #000000;
+}
+
+.welcome-image {
+  margin-top: 51px;
+  margin-bottom: 82px;
+}
+
+.advantages {
+
+}
+
+.city-advantages {
+  padding: 0;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  width: 620px;
+  margin: 0 auto;
+  margin-top: 69px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.advantages-text {
+  padding: 0;
+  margin: 0;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+  background-color: #ffffff;
+  margin-bottom: 69px;
+}
+
+.advantages-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.advantages-item {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item-wide {
+  display: flex;
+  color: #ffffff;
+  background-color: #82B3D3;
+}
+
+.advantages-item-conteiner {
+  width: 230px;
+  min-height: 200px;
+  padding: 90px 85px;
+}
+
+
+.advantages-title {
+  margin: 0;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantages-description {
+  margin: 0;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.advantages-image {}
+
+.recommendations {}
+
+.staff-service {
+  margin: 0;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  margin-top: 64px;
+  margin-bottom: 20px;
+}
+
+.invitation {
+  margin: 0;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 64px;
+}
+
+.recommendations-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.recommendations-item {
+  margin: 0;
+  width: 230px;
+  min-height: 200px;
+  padding: 81px 85px;
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.recommendations-food {
+
+}
+
+.recommendations-title {
+  margin: 0;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+
+.recommendations-description {
+  margin: 0;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #333333;
+}
+
+.search {
+padding-top: 96px;
+padding-bottom: 96px;
+}
+
+.search-container {
+  width: 592px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.search-title {
+  margin-top: 0;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+
+.search-discription {
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+
+}
+
+.search-button {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #ffffff;
+  background-color: #756157;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  padding: 8px 50px;
+}
+
+.page-footer {}
+
+.page-footer-container {
+  display: block;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-subscription {
+  background-image: url("../images/Subscribe.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.page-footer-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.mailing-list {
+  margin: 0;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+  text-align: center;
+}
+
+.newsletter-form {}
+
+.field {
+font-size: 18px;
+line-height: 24px;
+}
+
+.newsletter-button {
+font-weight: 700;
+font-size: 20px;
+line-height: 36px;
+color: #ffffff;
+background-color:#82B3D3;
+text-align: center;
+text-transform: uppercase;
+}
+
+.contact-information{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-social {}
+
+.footer-social-list {
+  margin: 0;
+}
+
+.footer-social-item {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.button {}
+
+.footer-contact {}
+
+.footer-contact-phone {
+  display: block;
+  padding: 5px 195px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-size: 40px;
+  line-height: 40px;
+  text-decoration: none;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.footer-logo {}
+
+.html-link {}
+
+.logo {}
