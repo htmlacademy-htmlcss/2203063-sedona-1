@@ -133,10 +133,10 @@
                 </div>
                 <div class="range-scale">
                   <div class="range-bar" style="left: 0; width: 226px">
-                    <button class="range-toggle toggle-min">
+                    <button class="range-toggle toggle-min" type="button">
                       <span class="visually-hidden">Изменить минимальную цену</span>
                     </button>
-                    <button class="range-toggle toggle-max">
+                    <button class="range-toggle toggle-max" type="button">
                       <span class="visually-hidden">Изменить максимальную цену</span>
                     </button>
                   </div>
@@ -152,7 +152,7 @@
           <div class="hotel-sorting">
             <h2 class="search-result">Найдено гостиниц: <span>38</span></h2>
             <select class="select-control" aria-label="Сортировка">
-              <option value="cheap">Сначала дешёвые</option>
+              <option value="cheap">Сначала дешевые</option>
               <option value="expensive">Сначала дорогие</option>
               <option value="popular">Сначала популярные</option>
             </select>
@@ -193,7 +193,9 @@
               <p class="product-card-price">От 4000 ₽</p>
               <a class="product-card-button" href="#">Подробнее</a>
               <button class="button-favorite" type="button">В Избранное</button>
-              <p class="hotels-stars"><span class="visually-hidden">4 звезды</span></p>
+              <p class="hotels-stars hotels-stars-four">
+                <span class="visually-hidden">4 звезды</span>
+              </p>
               <p class="product-card-reyting">Рейтинг:<span> 8,5</span></p>
             </li>
             <li class="product-card">
@@ -206,7 +208,9 @@
               <p class="product-card-price">От 5000 ₽</p>
               <a class="product-card-button" href="#">Подробнее</a>
               <button class="button-favorite key-pressed" type="button">В Избранном</button>
-              <p class="hotels-stars"><span class="visually-hidden">4 звезды</span></p>
+              <p class="hotels-stars hotels-stars-four">
+                <span class="visually-hidden">4 звезды</span>
+              </p>
               <p class="product-card-reyting">Рейтинг:<span> 9,2</span></p>
             </li>
             <li class="product-card">
@@ -219,7 +223,8 @@
               <p class="product-card-price">От 2500 ₽</p>
               <a class="product-card-button" href="#">Подробнее</a>
               <button class="button-favorite" type="button">В Избранное</button>
-              <p class="hotels-stars"><span class="visually-hidden">3 звезды</span></p>
+              <p class="hotels-stars hotels-stars-three">
+                <span class="visually-hidden">3 звезды</span></p>
               <p class="product-card-reyting">Рейтинг:<span> 6,9</span></p>
             </li>
             <li class="product-card">
@@ -232,7 +237,8 @@
               <p class="product-card-price">От 1500 ₽</p>
               <a class="product-card-button" href="#">Подробнее</a>
               <button class="button-favorite" type="button">В Избранное</button>
-              <p class="hotels-stars"><span class="visually-hidden">2 звезды</span></p>
+              <p class="hotels-stars hotels-stars-two">
+                <span class="visually-hidden">2 звезды</span></p>
               <p class="product-card-reyting">Рейтинг:<span> 5,0</span></p>
             </li>
           </ul>
