@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="icon" href="favicon.ico">
   </head>
 
   <body>
@@ -128,6 +129,7 @@
                 <p class="recommendations-description">Не только китайского, но&nbsp;и&nbsp;настоящего местного
                   производства!</p>
               </li>
+            </ul>
           </section>
           <section class="search">
             <h2 class="visually-hidden">Поиск подходящей гостиницы в Седоне</h2>
@@ -179,8 +181,7 @@
                 <li class="footer-social-item">
                   <a class="footer-social-link footer-social-youtube" href="https://www.youtube.com/user/htmlacademyru">
                     <svg class="social-link-icon" aria-hidden="true" focusable="false"
-                      xmlns="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" width="23" height="18"
-                      viewBox="0 0 23 18">
+                      xmlns="http://www.w3.org/2000/svg" width="23" height="18" viewBox="0 0 23 18">
                       <path
                         d="M18.94.36H3.51C1.65.36.33 1.95.33 3.76v10.09c0 1.91 1.32 3.5 3.18 3.5h15.65c1.64 0 3.17-1.59 3.17-3.4V3.76c-.22-1.8-1.53-3.4-3.39-3.4ZM7.99 12.89V4.82l7.34 4.04-7.34 4.03Z"
                         fill="currentColor" />
@@ -214,53 +215,68 @@
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
             <fieldset class="field-group booking-form">
               <label class="form-label" for="arrival-date">Дата Заезда:</label>
-              <input class="data-field" id="arrival-date" type="text" name="arrival-date" value="27 апреля 2020"
-                placeholder="Укажите дату" required>
-              </p>
-              <p class="important-message">Мы не можем отправить вас в прошлое.</p>
+              <div class="input-group">
+                <input class="data-field" id="arrival-date" type="text" name="arrival-date" value="27 апреля 2020"
+                  placeholder="Укажите дату" required>
+
+                <p class="important-message">Мы не можем отправить вас в прошлое.</p>
+              </div>
             </fieldset>
             <fieldset class="field-group booking-form">
               <label class="form-label" for="departure-date">Дата Выезда:</label>
-              <input class="data-field" id="departure-date" type="text" name="departure-date" value="1 сентября 2023"
-                placeholder="Укажите дату" required>
-              </p>
-              <p class="important-message useful-information">На эти даты есть свободные номера. Пока есть.</p>
+              <div class="input-group">
+                <input class="data-field" id="departure-date" type="text" name="departure-date" value="1 сентября 2023"
+                  placeholder="Укажите дату" required>
+                <p class="important-message useful-information">На эти даты есть свободные номера. Пока есть.</p>
+              </div>
             </fieldset>
             <div class="form-sort-fields">
               <fieldset class="person-selection-field">
                 <legend class="visually-hidden">Количество посетителей-взрослых</legend>
                 <label class="form-label" for="adults">Взрослые:</label>
-                <button class="minus-one-participant" type="button">
-                  <span class="visually-hidden">Уменьшить число</span>
-                </button>
-                <input class=" quantity-search" id="adults" type="number" name="adults" value="2">
-                <button class="plus-one-participant" type="button">
-                  <span class="visually-hidden">Увеличить число</span>
-                </button>
-              </fieldset>
-              <fieldset class="person-selection-field">
-                <legend class="visually-hidden">Количество посетителей-детей</legend>
-                <label class="form-label" for="children">Дети:</label>
-                <span class="tooltip">
-                  <button class="tooltip-button" type="button" aria-labelledby="tooltip-label">
-                    <span class="visually-hidden">Открыть всплывающее информационное окно</span>
+                <div class="complex-input">
+                  <button class="minus-one-participant" type="button">
+                    <span class="visually-hidden">Уменьшить число</span>
                   </button>
-                  <span class="tooltip-info" id="tooltip-label" role="tooltip">Укажите количество детей, которые будут с
-                    вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
-                </span>
-                <button class="minus-one-participant" type="button">
-                  <span class="visually-hidden">Уменьшить число</span>
-                </button>
-                <input class="quantity-search" id="children" type="number" name="children" value="2">
-                <button class="plus-one-participant" type="button">
-                  <span class="visually-hidden">Увеличить число</span>
-                </button>
+                  <input class="quantity-search" id="adults" type="number" name="adults" value="2">
+                  <button class="plus-one-participant" type="button">
+                    <span class="visually-hidden">Увеличить число</span>
+                  </button>
+                </div>
+              </fieldset>
+              <fieldset class="person-selection-field children-block">
+                <legend class="visually-hidden">Количество посетителей-детей</legend>
+                <div class="tooltip-block">
+                  <label class="form-label" for="children">Дети:</label>
+                  <span class="tooltip">
+                    <button class="tooltip-button" type="button" aria-labelledby="tooltip-label">
+                      <span class="visually-hidden">Открыть всплывающее информационное окно</span>
+                    </button>
+                    <span class="tooltip-info-wrapper">
+                      <span class="tooltip-info" id="tooltip-label" role="tooltip">Укажите количество детей, которые
+                        будут
+                        с
+                        вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                    </span>
+                  </span>
+                </div>
+                <div class="complex-input">
+                  <button class="minus-one-participant" type="button">
+                    <span class="visually-hidden">Уменьшить число</span>
+                  </button>
+                  <input class="quantity-search" id="children" type="number" name="children" value="2">
+                  <button class="plus-one-participant" type="button">
+                    <span class="visually-hidden">Увеличить число</span>
+                  </button>
+                </div>
               </fieldset>
             </div>
             <button class="appointment-submit" type="submit">Найти</button>
+          </form>
         </section>
       </div>
-      <script src="./scripts/script.js"></script>
+    </div>
+    <script src="./scripts/script.js"></script>
   </body>
 
 </html>
