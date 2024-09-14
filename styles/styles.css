@@ -457,7 +457,7 @@ body {
   text-transform: uppercase;
 }
 
-.search-discription {
+.search-description {
   margin: 0 0 54px;
   font-size: 22px;
   line-height: 26px;
@@ -1020,7 +1020,7 @@ body {
 .hotel-sorting {
   width: 1060px;
   display: flex;
-  padding: 50px 70px 40px 70px;
+  padding: 50px 70px 39px 70px;
 }
 
 .search-result {
@@ -1039,6 +1039,7 @@ body {
   line-height: 21px;
   width: 292px;
   color: #333333;
+  background-color: #ffffff;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   appearance: none;
@@ -1071,7 +1072,7 @@ body {
   justify-content: space-between;
 }
 
-.card-grid-taggle {
+.card-grid-toggle {
   width: 44px;
   height: 44px;
   display: flex;
@@ -1081,33 +1082,32 @@ body {
   border: 2px solid #e5e5e5;
 }
 
-.card-grid-taggle:hover {
+.card-grid-toggle:hover {
   border: 2px solid #000000;
 }
 
-.card-grid-taggle:active {
+.card-grid-toggle:active {
   border: 2px solid #000000;
 }
 
-.card-grid-taggle.card-dark {
+.card-grid-toggle.card-dark {
   border: 2px solid #000000;
 }
 
 .product-list {
   margin: 0 70px;
-  padding: 0 0 40px;
+  padding: 0 0 39px;
   border-bottom: 1px solid #e6e6e6;
   list-style-type: none;
   display: grid;
   grid-template-columns: repeat(3, 340px);
-  gap: 20px;
+  gap: 18px 20px;
 }
 
 .product-card {
-  padding: 19px;
-  display: grid;
-  grid-template-columns: repeat(2, 140px);
-  gap: 16px 20px;
+  padding: 20px 19px 21px;
+  display: flex;
+  flex-direction: column;
   border: 1px solid #e6e6e6;
   border-radius: 4px;
 }
@@ -1118,7 +1118,14 @@ body {
   font-size: 24px;
   line-height: 28px;
   color: #000000;
-  grid-column: 1 / -1;
+  flex-grow: 1;
+  margin-bottom: 16px;
+}
+
+.product-card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  gap: 16px 20px;
 }
 
 .product-card-image {
@@ -1282,7 +1289,7 @@ body {
   width: 84px;
 }
 
-.product-card-reyting {
+.product-card-rating {
   margin: 0;
   font-size: 16px;
   line-height: 20px;
@@ -1299,7 +1306,7 @@ body {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  padding: 40px 70px 60px 70px;
+  padding: 39px 70px 60px 70px;
 }
 
 .pagination-item {
@@ -1551,6 +1558,11 @@ body {
   opacity: 1;
 }
 
+.quantity-search[type=number] {
+  -moz-appearance: textfield;
+  -moz-padding: 0;
+}
+
 .quantity-search {
   appearance: none;
   margin: 0;
@@ -1558,8 +1570,7 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  max-width: 30px;
-  padding: 14px 1px;
+  max-width: 28px;
   background-color: #f2f2f2;
   font-family: inherit;
   text-align: center;
