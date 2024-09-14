@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="./images/icons/favicon.png">
   </head>
 
   <body>
@@ -194,14 +194,16 @@
                   alt="Ночное небо в горной расщелине.">
                 <h3 class="product-card-title">Amara Resort & Spa</h3>
               </a>
-              <p class="product-card-type">Гостиница</p>
-              <p class="product-card-price">От 4000 ₽</p>
-              <a class="product-card-button" href="#">Подробнее</a>
-              <button class="button-favorite" type="button">В Избранное</button>
-              <p class="hotels-stars hotels-stars-four">
-                <span class="visually-hidden">4 звезды</span>
-              </p>
-              <p class="product-card-rating">Рейтинг:<span> 8,5</span></p>
+              <div class="product-card-wrapper">
+                <p class="product-card-type">Гостиница</p>
+                <p class="product-card-price">От 4000 ₽</p>
+                <a class="product-card-button" href="#">Подробнее</a>
+                <button class="button-favorite" type="button">В Избранное</button>
+                <p class="hotels-stars hotels-stars-four">
+                  <span class="visually-hidden">4 звезды</span>
+                </p>
+                <p class="product-card-rating">Рейтинг:<span> 8,5</span></p>
+              </div>
             </li>
             <li class="product-card">
               <a class="product-card-link" href="#">
@@ -209,14 +211,16 @@
                   alt="Радуга в горах.">
                 <h3 class="product-card-title">Villas at Poco Diablo</h3>
               </a>
-              <p class="product-card-type">Гостиница</p>
-              <p class="product-card-price">От 5000 ₽</p>
-              <a class="product-card-button" href="#">Подробнее</a>
-              <button class="button-favorite key-pressed" type="button">В Избранном</button>
-              <p class="hotels-stars hotels-stars-four">
-                <span class="visually-hidden">4 звезды</span>
-              </p>
-              <p class="product-card-rating">Рейтинг:<span> 9,2</span></p>
+              <div class="product-card-wrapper">
+                <p class="product-card-type">Гостиница</p>
+                <p class="product-card-price">От 5000 ₽</p>
+                <a class="product-card-button" href="#">Подробнее</a>
+                <button class="button-favorite key-pressed" type="button">В Избранном</button>
+                <p class="hotels-stars hotels-stars-four">
+                  <span class="visually-hidden">4 звезды</span>
+                </p>
+                <p class="product-card-rating">Рейтинг:<span> 9,2</span></p>
+              </div>
             </li>
             <li class="product-card">
               <a class="product-card-link" href="#">
@@ -224,6 +228,7 @@
                   alt="Горы Каньона на фоне облаков.">
                 <h3 class="product-card-title">Desert Quail Inn</h3>
               </a>
+              <div class="product-card-wrapper">
               <p class="product-card-type">Гостиница</p>
               <p class="product-card-price">От 2500 ₽</p>
               <a class="product-card-button" href="#">Подробнее</a>
@@ -232,6 +237,7 @@
                 <span class="visually-hidden">3 звезды</span>
               </p>
               <p class="product-card-rating">Рейтинг:<span> 6,9</span></p>
+              </div>
             </li>
             <li class="product-card">
               <a class="product-card-link" href="#">
@@ -239,6 +245,7 @@
                   alt="Ночной Каньон и звездное небо.">
                 <h3 class="product-card-title">GreenTree Inn</h3>
               </a>
+              <div class="product-card-wrapper">
               <p class="product-card-type">Гостиница</p>
               <p class="product-card-price">От 1500 ₽</p>
               <a class="product-card-button" href="#">Подробнее</a>
@@ -247,6 +254,7 @@
                 <span class="visually-hidden">2 звезды</span>
               </p>
               <p class="product-card-rating">Рейтинг:<span> 5,0</span></p>
+              </div>
             </li>
           </ul>
           <ul class="pagination-list">
@@ -310,8 +318,8 @@
                 </li>
                 <li class="footer-social-item">
                   <a class="footer-social-link footer-social-youtube" href="https://www.youtube.com/user/htmlacademyru">
-                    <svg class="social-link-icon" aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg" width="23" height="18" viewBox="0 0 23 18">
+                    <svg class="social-link-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="23"
+                      height="18" viewBox="0 0 23 18">
                       <path
                         d="M18.94.36H3.51C1.65.36.33 1.95.33 3.76v10.09c0 1.91 1.32 3.5 3.18 3.5h15.65c1.64 0 3.17-1.59 3.17-3.4V3.76c-.22-1.8-1.53-3.4-3.39-3.4ZM7.99 12.89V4.82l7.34 4.04-7.34 4.03Z"
                         fill="currentColor" />
